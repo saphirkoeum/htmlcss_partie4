@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Partie 4 - Exercice 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>HTML/CSS - Partie 4 - Exercice 1</h1>
+<p><em>Reproduire ce formulaire</em></p>
+<img src="formulaire.png" alt="exemple formulaire" width="40%">
+  <form method="POST" action="traitement.php">
+    <fieldset class="identite">
+      <legend>Votre identité</legend>
+      <ol>
+        <li><label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" placeholder="Nom" />
+        </li>
+        <li>
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Prénom" />
+        </li>
+        <li>
+          <label for="email">Adresse mail :</label>
+          <input type="email" id="email" name="email" placeholder="Adresse mail" />
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset class="livraison">
+      <legend>Adresse de livraison</legend>
+      <ol>
+        <li><label id="adress">Adresse :</label>
+          <textarea cols="20" rows="4"></textarea>
+        </li>
+        <li><label for="codepostal">Code postal :</label>
+          <input type="number" id="codepostal" name="codepostal" placeholder="Code Postal" />
+        </li>
+        <li><label for="ville">Ville :</label>
+          <input type="text" id="ville" name="ville" placeholder="Ville" />
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset class="reglement">
+      <legend>Information de réglèment</legend>
+      <ol>
+        <li>Type de carte bancaire :</li>
+        <li><input type="radio" name="cb" value="cb">
+          <label>VISA</label>
+        </li>
+        <li><input type="radio" name="cb" value="cb">
+          <label>Mastercard</label>
+        </li>
+        <li><label for="numerodecarte">Numéro de carte :</label>
+          <input type="number" id="numerodecarte" name="numerodecarte" placeholder="Numéro de carte" />
+        </li>
+        <li><label for="codesecurite">Code de sécurité :</label>
+          <input type="number" id="codesecurite" name="codesecurite" placeholder="Code de sécurité" />
+        </li>
+        <li><label for="nomtitulaire">Nom du titulaire :</label>
+          <input type="text" id="nomtitulaire" name="nomtitulaire" placeholder="Nom du titulaire" />
+        </li>
+      </ol>
+    </fieldset>
+  </form>
+  <button type="submit">J'achète !</button>
+</body>
+
+</html>

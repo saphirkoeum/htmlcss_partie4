@@ -1,0 +1,29 @@
+h1 {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+body{
+  font-size: 14pt;
+}
+.identite{
+  background-color: #007770;
+}
+.identite legend{
+  background-color: #007770;
+}
+input{
+  border-radius: 5px;
+  padding: 5px;
+}
+.livraison{
+  background-color: #911580;
+}
+.livraison legend{
+  background-color: #911580;
+}
+.reglement{
+  background-color: #dd0436;
+}
+.reglement legend{
+  background-color: #dd0436;
+}
